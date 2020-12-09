@@ -1,7 +1,6 @@
 # The show_barcode library
-This is a library my CS teacher asked me and my friend to make for class as a 
+This is a library my CS teacher asked me and my friend to make for class as a 9th grade finish project.
 
-9th grade finish project.
 
 
 # installation
