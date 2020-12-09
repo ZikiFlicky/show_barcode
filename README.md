@@ -1,9 +1,10 @@
 # show_barcode
 This is a library my CS teacher asked me and my friend to make for class as a 
+
 9th grade finish project.
 
 
-INSTALLATION:
+# installation
 ---
 For installing you can simply run the shell script `install.sh`, 
 
