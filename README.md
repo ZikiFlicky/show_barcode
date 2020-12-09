@@ -25,4 +25,6 @@ You can install using a certain version by entering `py -[version] setup.py inst
 
 # use
 
-for importing use ```python import show_barcode```
+for importing use ```python 
+import show_barcode
+```
