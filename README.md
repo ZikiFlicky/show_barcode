@@ -7,6 +7,8 @@ This is a library my CS teacher asked me and my friend to make for class as a 9t
 
 ### Windows and UNIX installations
 
+To start the installation you need to cd into the download directory where `setup.py` is stored.
+
 For installing you can simply run the shell script `install.sh`.
 
 If that doesnt work you should try calling it through the terminal,  
@@ -20,3 +22,7 @@ knowing the path to your python executable.
 You can also install using the py launcher (`py -0` to see all versions).
 
 You can install using a certain version by entering `py -[version] setup.py install`
+
+# use
+
+for importing use ```python import show_barcode```
