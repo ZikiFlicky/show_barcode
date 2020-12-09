@@ -13,4 +13,10 @@ If that doesnt work you should try calling it through the terminal,
 
 knowing the path to your python executable. 
 
-`--python executables path-- setup.py install`
+`[python executables path] setup.py install`
+
+### Windows specific download
+
+You can also install using the py launcher (`py -0` to see all versions).
+
+You can install using a certain version by entering `py -[version] setup.py install`
