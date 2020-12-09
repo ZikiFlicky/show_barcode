@@ -9,3 +9,4 @@ which is multiplatform.
 If that doesnt work you should try calling it through the terminal, 
 knowing the path to your python executable. 
 `-python path- setup.py install`
+a
