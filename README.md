@@ -1,7 +1,7 @@
 # The show_barcode library
 This is a library me and [Alon](https://github.com/MorphalFSR) made for my computer science teacher who asked for a barcode 
 
-library for our class as a 9th grade finish project. this library is just making it
+library for our class as a 9th grade finish project. this library is exists for making it
 
 easy for the students to display a barcode on screen.
 
