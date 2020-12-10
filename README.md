@@ -5,7 +5,7 @@ This is a library my CS teacher asked me and my friend to make for class as a 9t
 
 # installation
 
-### Windows and UNIX installations
+### Windows and UNIX( Mac and Linux) installations
 
 To start the installation you need to cd into the download directory where `setup.py` is stored.
 
