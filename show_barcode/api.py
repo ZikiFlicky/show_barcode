@@ -1,4 +1,5 @@
 import barcode
+from barcode import BarcodeNotFoundError
 
 
 DEFAULT_BAR: str = "ean13"
@@ -17,11 +18,13 @@ def create_barimg(bar: str, bar_type: str = None):
     bar_type = bar_type or DEFAULT_BAR
     bar_type = bar_type.lower()
     # check if the barcode type is in available barcodes, raise error if not
-    assert bar_type in barcode_digits
+    if bar_type not in barcode_digits:
+        raise BarcodeNotFoundError(
+            "unsupported barcode type '{}'".format(bar_type)
+        )
     # store length of barcode
     barcode_length: int = barcode_digits[bar_type]
-    len_err: str = f"the length of the barcode is supposed to be {barcode_length}"
-    assert len(bar) == barcode_length, len_err
+    assert len(bar) == barcode_length
     # creates a barcode
     ean = barcode.get(bar_type, bar, barcode.writer.ImageWriter())
     assert ean.get_fullcode() == bar
