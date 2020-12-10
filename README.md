@@ -1,5 +1,5 @@
 # The show_barcode library
-This is a library my CS teacher asked me and my friend to make for class as a 9th grade finish project.
+This is a library me and [Alon]() made for my computer science teacher who asked for a barcode library for our class as a 9th grade finish project.
 
 
 
