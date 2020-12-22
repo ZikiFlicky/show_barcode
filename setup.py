@@ -1,20 +1,32 @@
+# made by Yuval Tasher and Alon Segal 2020
 from setuptools import setup
-from configparser import RawConfigParser
-from json import loads
 
 
-cfg_file: str = r"setup.cfg"
-parse_tup = lambda op: (op[0], loads(op[1]))
-with open(cfg_file) as cfg:
-    # create parser and read the setup.cfg file
-    parser = RawConfigParser()
-    parser.read_file(cfg)
-    opts: list = parser["setup"].items()
-    # evaluated options
-    val_opts: dict = dict(map(parse_tup, opts))
-    
-    # setup
+# dependencies to download
+dependencies: list = ["Pillow", "python-barcode"]
+
+# minimum version
+min_ver: str = "3.7"
+
+def main() -> None:
     setup(
-        **val_opts
+        name="show_barcode",
+        version="1.0",
+        packages=["show_barcode"],
+        license="GPL3",
+        author="Yuval Tasher, Alon Segal",
+        description="a library to show generate barcodes that show up on screen",
+        install_requires=dependencies,
+        python_requires=f">={min_ver}",
+        classifiers=[
+            "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.7",
+            "Programming Language :: Python :: 3.8",
+            "Programming Language :: Python :: 3.9"
+        ]
     )
+
+
+if __name__ == "__main__":
+    main()
 
