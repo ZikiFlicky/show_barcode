@@ -5,8 +5,6 @@ from setuptools import setup
 # dependencies to download
 dependencies: list = ["Pillow", "python-barcode"]
 
-# minimum version
-min_ver: str = "3.7"
 
 def main() -> None:
     setup(
@@ -17,7 +15,7 @@ def main() -> None:
         author="Yuval Tasher, Alon Segal",
         description="a library to show generate barcodes that show up on screen",
         install_requires=dependencies,
-        python_requires=f">={min_ver}",
+        python_requires=">=3.7",
         classifiers=[
             "Programming Language :: Python :: 3",
             "Programming Language :: Python :: 3.7",
