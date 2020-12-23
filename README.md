@@ -25,6 +25,8 @@ knowing the path to your python executable.
 
 ### Windows specific download
 
+You can now download using the `winstall.bat` batch file.
+
 You can also install using the py launcher (`py -0` to see all versions).
 
 You can install using a certain version by entering `py -[version] setup.py install`
