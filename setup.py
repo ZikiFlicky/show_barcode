@@ -1,4 +1,4 @@
-# made by Yuval Tasher and Alon Segal 2020
+# created by Yuval Tasher and Alon Segal 2020
 from setuptools import setup
 
 
